@@ -1,0 +1,360 @@
+.grid-container {
+  display: grid;
+  height: auto;/*height of container*/
+  align-content: space-around;/*aligns rows in the container*/
+  justify-content: space-evenly;/*justifys column space in the container*/
+  grid-template-columns: 1fr 1fr 1fr;/*Controls column size (Make the grid smaller than the container)*/
+  /*grid-template-rows: 100px auto 65px auto;Controls row size (Make the grid smaller than the container)*/
+  grid-auto-rows: minmax (100px, auto);
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+
+}
+.grid-container > div {
+  grid-column: 1/ span 3;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  border: 3px solid black;
+}
+
+html, body {
+  box-sizing: border-box;
+  background-color: white;
+  height: 100%
+  padding:10px
+  margin: 00px;
+  }
+/*html, body {
+  background-color: #ffeead;
+  margin: 10px;
+}*/
+
+.header-bar{
+  border: 2px solid black;
+background-color: #cbced0;
+padding: 10px 0;
+  display: flex;
+}
+
+.grid-container > .header-bar {
+  background-color: #cbced0;
+  color:purple;
+  font-family: "Shadows Into Light Two", cursive;
+  font-size: 30px;
+  margin: 20px 0px;
+}
+
+@font-face {
+  font-family: Sun Valley_demo;
+  src: url(Sun Valley_demo.ttft);
+  
+}
+
+h1{
+  font-family:/*'Shadows Into Light Two', cursive*/Sun Valley-demo.ttf;
+  color: Purple;
+  background-color: lightblue;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 50px;
+  border: 3px solid black;
+}
+
+/*SHRINK H1, THE SAME AS NAV BAR
+@media all and (max-width: 600px) {
+  .h1 {
+    flex-wrap: wrap;
+  }
+  .h1 > li {
+    flex: 1 1 50%;
+  }
+}*/
+
+
+/*nav menu*/
+.navcontainer {
+  border: 0px solid #cbced0;
+  display: flex;
+  align-items: center;
+justify-content: center;
+}
+
+@media all and (max-width: 600px) {
+  .navcontainer {
+    flex-wrap: wrap;
+  }
+  .navcontainer > li {
+    flex: 1 1 50%;
+  }
+}
+
+
+@media all and (max-width: 400px) {
+  .navcontainer {
+    flex-wrap: wrap;
+  }
+  .navcontainer > li {
+    flex: 1 1 100%;
+  }
+}
+
+.navcontainer > li {
+  padding: 10px;
+  text-align: center;
+  font-family:'Shadows Into Light Two', cursive;
+  font-size: 2em;
+  color: black;
+  box-sizing: border-box;
+  background-color: lightgrey;
+  list-style-type: none;
+}
+
+.navcontainer {
+  padding: 0;
+  background-color: lightgrey;
+}
+
+.navcontainer> li:hover{
+  margin: 0px 0px;
+  border:0px solid black;
+  background-color: purple;/*mouse over link*/
+  font-family:'Shadows Into Light Two', cursive;
+  color:white;
+  font-size: 2em;
+}
+
+
+
+
+
+
+.item2,.item5 {
+  grid-column: 1 / span 3;
+}
+
+.item1 {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.item1 > div {
+
+background-color: black;
+align-items: center;
+padding: 0px 10px;
+color:white;
+font-family: 'Pacifico', cursive;
+font-size: 40px;
+margin: 20px 0px;
+}
+
+.item1 >button{
+  display: flex;
+  background-color: purple; /* purple background */
+  border: 1px solid black; /* black border */
+  border-radius: 5px;
+  font-family:'Pacifico', cursive;
+  color: white; /* White text */
+  padding: 0px 40px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  margin: 20px 10px;
+  font-size: 40px;
+}
+
+
+.item3 {
+    grid-column: 1 / span 2;
+}
+
+.grid-container >.item3 {
+  text-align: left;
+  background-color: white;
+  color:black;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 22px;
+  margin: 20px 0px;
+  padding-left: 1em;
+}
+
+.grid-container >.item4{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 200px);
+  grid-auto-rows:90px;
+  align-content: space-around;
+  justify-content: center;
+  background-color: purple;
+  grid-gap:1em;
+  padding:1em;
+}/*nested grid*/
+/*
+.item4 > div{
+  border:#333 3px solid;
+  background-color: black;
+  text-align: center;
+  color:white;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 50px;
+  margin: 1px 1px;
+  padding-bottom: 100px;
+}*/
+
+  .grid-container > .item5 {
+    background-color: #cbced0;
+    color:black;
+    font-family: "Shadows Into Light", cursive;
+    font-size: 30px;
+    margin: 20px 0px;
+  }
+
+.item5 {
+  border: 3px solid black;
+  display: flex;
+  text-align: center;
+  list-style-type: none;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 5px;
+}
+
+
+/*.About,.Contact {
+  align-self: flex-start;
+*/
+.imagescontainer > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: #ffeead;
+}
+
+.imagescontainer > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+  .imagescontainer {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      grid-auto-rows: 150px;
+      grid-auto-flow: dense;
+  }
+
+
+  .horizontal {
+      grid-column: span 4;
+      grid-row: 2;
+  }
+
+  .vertical {
+      grid-row: span 2;
+  }
+
+  .big {
+      grid-column: span 2;
+      grid-row: span 2;
+  }
+
+
+
+
+/*.horizontal {
+    grid-column: span 4;
+
+}
+
+.vertical {
+  grid-column: span 2;
+    grid-row: span 3;
+
+}
+
+.big {
+    grid-column: span 4;
+    grid-row: span 4;
+}
+
+.normal{
+  grid-column: span 3;
+  grid-row: span 3;
+
+}
+
+.big_vertical {
+  grid-row: span 5;
+  grid-column: span 2;
+}
+
+.bighorizontal {
+    grid-column: span 4;
+    grid-row: span 2;
+}
+  /*social media icons*/
+  /* Style all font awesome icons */
+
+  .item5 > li.About {
+    grid-column: 1/ 3;
+  }
+
+  .fa,.gallery.html {
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px;
+    width: 70px;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30%;
+    margin: 10px 30px;
+  }
+
+  /* Add a hover effect if you want */
+  .fa:hover {
+      opacity: 0.7;
+  }
+
+  /* Set a specific color for each brand */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+  .fa-pinterest {
+    background: #cb2027;
+    color: white;
+  }
+
+  .fa-snapchat {
+    background: yellow;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+
+  .fa-flickr {
+    background: #f40083;
+    color: white;
+  }
