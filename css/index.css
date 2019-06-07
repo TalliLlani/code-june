@@ -9,11 +9,11 @@ a:visited {
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a:active {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 
@@ -149,7 +149,7 @@ justify-content: center;
 .navcontainer> li:hover{
   margin: 0px 0px;
   border:0px solid black;
-  background-color: orange;/*mouse over link*/
+  background-color: purple;/*mouse over link*/
   font-family:'Shadows Into Light Two', cursive;
   color:white;
   font-size: 2em;
