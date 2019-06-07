@@ -185,7 +185,7 @@ margin: 20px 0px;
 
 .item1 >button{
   display: flex;
-  background-color: purple; /* purple background */
+  background-color: black; /* purple background */
   border: 1px solid black; /* black border */
   border-radius: 5px;
   font-family:'Pacifico', cursive;
