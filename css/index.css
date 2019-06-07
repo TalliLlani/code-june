@@ -1,3 +1,31 @@
+
+/*removing underlines from all links*/
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
 .grid-container {
   display: grid;
   height: auto;/*height of container*/
@@ -51,7 +79,7 @@ padding: 10px 0;
 @font-face {
   font-family: Sun Valley_demo;
   src: url(Sun Valley_demo.ttft);
-  
+
 }
 
 h1{
@@ -121,7 +149,7 @@ justify-content: center;
 .navcontainer> li:hover{
   margin: 0px 0px;
   border:0px solid black;
-  background-color: purple;/*mouse over link*/
+  background-color: orange;/*mouse over link*/
   font-family:'Shadows Into Light Two', cursive;
   color:white;
   font-size: 2em;
