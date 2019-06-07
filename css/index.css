@@ -1,6 +1,7 @@
 
 /*removing underlines from all links*/
 a:link {
+  color: black;
   text-decoration: none;
 }
 
