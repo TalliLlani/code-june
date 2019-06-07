@@ -139,7 +139,7 @@ justify-content: center;
   text-align: center;
   font-family:'Shadows Into Light Two', cursive;
   font-size: 2em;
-  color: red;
+  color: black;
   box-sizing: border-box;
   background-color: lightgrey;
   list-style-type: none;
@@ -207,7 +207,7 @@ margin: 20px 0px;
 .grid-container >.item3 {
   text-align: left;
   background-color: white;
-  color:pink;
+  color: black;
   font-family: 'Shadows Into Light', cursive;
   font-size: 22px;
   margin: 20px 0px;
